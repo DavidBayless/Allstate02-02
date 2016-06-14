@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+  body
+    if data
+      ul
+        each val in data
+          a(href='/cats/' + val._id +'/edit')
+            li= val.name + ' ' + val.color
+            form(method='post' action='/cats/'+ val._id+'/adopt')
+              input(type='submit' value='Adopt?')

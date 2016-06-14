@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+  body
+    h1 EDIT A CAT!!!!!!!!
+    form(method='post' action='/cats')
+      input(type='text' name='newName' placeholder='new name')
+      br
+      input(type='text' name='newColor' placeholder='new color')
+      br
+      input(type='submit' value='Edit Cat!')
+      br
+    if error
+      h4= error

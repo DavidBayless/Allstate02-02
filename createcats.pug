@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+  body
+    h1 Create a Cat!!!
+    form(method='post' action='/cats')
+      label(for='Name' value='Name') Name
+      br
+      input(type='text' name='name' placeholder='Name')
+      br
+      label(for='Color') Color
+      br
+      input(type='text' placeholder='Col0r' name='color')
+      br
+      input(type='submit' value='Create Cat')
+    if data.error
+      each error in data.error
+        h4= error

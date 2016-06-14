@@ -1,0 +1,22 @@
+{
+  "name": "day2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mongo.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "fs": "0.0.2",
+    "jade": "^1.11.0",
+    "mongodb": "^1.4.40",
+    "monk": "^1.0.1",
+    "pug": "^0.1.0"
+  }
+}
